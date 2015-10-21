@@ -1,19 +1,16 @@
+var JuliemrHomePage = require('./pages/JuliemrHomePage');
+
 describe('Protractor Demo App', function() {
+	var page = new JuliemrHomePage();
 	
-	var firstNumber = element(by.model('first'));
-	var secondNumber = element(by.model('second'));
-	var goButton = element(by.id('gobutton'));
-	var lastResult = element(by.binding('latest'));
-	var history = element.all(by.repeater('result in memory'));
-  
 	function add(a,b){
-		firstNumber.sendKeys(a);
-		secondNumber.sendKeys(b);
-		goButton.click();
+		page.setFirstNumber(a);
+		page.setSecondNumber(b);
+		page.clickGoButton();
 	}
 	
 	beforeEach(function(){
-		browser.get('http://juliemr.github.io/protractor-demo/');  
+		  page.get();
 	});
   
 	it('should have a title', function() {
@@ -21,26 +18,22 @@ describe('Protractor Demo App', function() {
 	});
 	
 	it('should add numbers properly', function () {
-		add(1,3)
-		expect(lastResult.getText()).toEqual('4');
-		add(3,4)
-		expect(lastResult.getText()).toEqual('7');
+		add(1,3);
+		expect(page.getLastResult()).toEqual('4');
+		add(3,4);
+		expect(page.getLastResult()).toEqual('7');
 		
-		expect(history.count()).toEqual(2);
-		expect(history.first().getText()).toContain('3 + 4');
-		expect(history.last().getText()).toContain('1 + 3');
+		expect(page.getHistoryCount()).toEqual(2);
+		expect(page.getLatestFromHistory()).toContain('3 + 4');
+		expect(page.getFirstFromHistory()).toContain('1 + 3');
 	});
 	
 	it('should substract numbers properly', function (){
-		firstNumber.sendKeys(3);
-		secondNumber.sendKeys(2);
+		page.setFirstNumber(3);
+		page.setSecondNumber(2);
 		element(by.cssContainingText('option', '-')).click();
-		goButton.click();
+		page.clickGoButton();
 		
-		expect(lastResult.getText()).toEqual('1');
-	});
-	
-	it('should have a history', function(){
-			
+		expect(page.getLastResult()).toEqual('1');
 	});
 });
