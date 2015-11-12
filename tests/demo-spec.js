@@ -1,4 +1,4 @@
-var JuliemrHomePage = require('./pages/JuliemrHomePage');
+var JuliemrHomePage = require('../pages/JuliemrHomePage');
 
 describe('Protractor Demo App', function() {
 	var page = new JuliemrHomePage();
