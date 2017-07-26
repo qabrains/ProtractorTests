@@ -8,15 +8,15 @@ exports.config = {
 
 	//for running specific test suites
 	suites:{
-		smoke:'tests/smoke_tests/*.js',
+		smoke:'tests/smoke-tests/*.js',
 		full:'tests/*.js'
 	},
 
 	capabilities:{
-		//browserName: 'phantomjs', 'phantomjs.binary.path': require('phantomjs').path,
+		// browserName: 'phantomjs', 'phantomjs.binary.path': require('phantomjs').path,
 		browserName: 'chrome',
 		shardTestFiles: true,
-		maxInstances: 2},
+		maxInstances: 3},
 
 	//multiCapabilities: [
 	//	{browserName: 'firefox',
@@ -29,7 +29,7 @@ exports.config = {
 	//	shardTestFiles: true,
 	//	maxInstances: 3},
 	//],
-	onPrepare: function() {
+	onPrepare: () => {
 		jasmine.getEnv().addReporter(
 			new Jasmine2HtmlReporter({
 			savePath: 'jasmine2-html-reporter-results/screenshots'})
