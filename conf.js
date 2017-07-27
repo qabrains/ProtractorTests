@@ -8,7 +8,7 @@ exports.config = {
 
 	//for running specific test suites
 	suites:{
-		smoke:'tests/smoke-tests/*.js',
+		smoke:'tests/demo-with-*.js',
 		full:'tests/*.js'
 	},
 

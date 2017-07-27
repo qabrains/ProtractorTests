@@ -17,6 +17,10 @@ class JuliemrHomePage {
 		browser.get('http://juliemr.github.io/protractor-demo/');
 	};
 
+	getHomePageTitle() {
+		return browser.getTitle();
+	}
+
 	setFirstNumber(number) {
 		this.firstNumber.sendKeys(number);
 	};

@@ -15,7 +15,7 @@ describe('Protractor Demo App - with Page object pattern -->', () => {
 	});
 
 	it('should have a title', () => {
-		expect(browser.getTitle()).toEqual('Super Calculator');
+		expect(page.getHomePageTitle()).toEqual('Super Calculator');
 	});
 
 	it('should add numbers properly', () => {
