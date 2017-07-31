@@ -1,0 +1,12 @@
+[
+	{
+		"firstNumber":2,
+		"secondNumber":3,
+		"expectedResult":"5"
+	},
+	{
+		"firstNumber":5,
+		"secondNumber":7,
+		"expectedResult":"12"
+	}
+]
