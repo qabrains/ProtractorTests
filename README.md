@@ -1,9 +1,13 @@
+
 # **What's in this repository**
 ----
 
 **How to use this repository**
 ----
 
+- Install protractor using '````npm install -g protractor````' command
+- Run '````npm install````' command
+- Run '````protractor conf.js````' command to run all the tests
 
 **Tests:**
 ----
@@ -22,4 +26,4 @@
 
 [demo-data-driven-testing-spec.js](https://github.com/qabrains/ProtractorTests/blob/updating-tests-and-adding-documentation/tests/demo-data-driven-testing-spec.js)
 
-- This file has an example of writing data driven testing. It reads data from the [json file](https://github.com/qabrains/ProtractorTests/blob/updating-tests-and-adding-documentation/test-data/add-functionality-test-data.json) and run the tests for each set od data
+- This file has an example of writing data driven testing. It reads data from the [json file](https://github.com/qabrains/ProtractorTests/blob/updating-tests-and-adding-documentation/test-data/add-functionality-test-data.json) and run the tests for each set of data
