@@ -1,0 +1,25 @@
+{
+  "name": "protractor-tests",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[Dautomation using \u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D Protractor\"",
+  "main": "conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qabrains/ProtractorTests.git"
+  },
+  "author": "Kapil Sethi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qabrains/ProtractorTests/issues"
+  },
+  "homepage": "https://github.com/qabrains/ProtractorTests#readme",
+  "devDependencies": {
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
