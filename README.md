@@ -1,11 +1,20 @@
+[![Build Status](https://travis-ci.org/qabrains/ProtractorTests.png)](https://travis-ci.org/qabrains/ProtractorTests)
+
 # **What's in this repository**
 
 **How to use this repository:**
 ----
 
+**Setup:**
+
 - Install protractor using '````npm install -g protractor````' command
+- Run '````webdriver-manager update````' command
 - Run '````npm install````' command
-- Run '````protractor conf.js````' command to run all the tests
+
+**Running Tests:**
+
+- Run '````npm run regression````' command to run all the tests
+- Run '````npm run smoketest````' command to run smoke tests
 
 **Tests:**
 ----
@@ -38,3 +47,8 @@
         ````export PATH=$PATH:/path/to/geckodriver````
 
     - On Windows you need to update the Path system variable to add the full directory path to the executable
+
+**Have a feedback?**
+---
+
+If you have any feedback or question, please email me at kapil.sethi9@gmail.com

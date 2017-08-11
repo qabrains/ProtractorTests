@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "protractor conf.js"
+    "test": "protractor travis.conf.js",
+    "smoketest": "protractor local.conf.js --suite smoketest",
+    "regression": "protractor local.conf.js --suite regression"
   },
   "repository": {
     "type": "git",
