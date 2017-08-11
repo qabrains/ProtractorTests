@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "pretest": "webdriver-manager update",
     "test": "protractor travis.conf.js",
     "smoketest": "protractor local.conf.js --suite smoketest",
     "regression": "protractor local.conf.js --suite regression"
