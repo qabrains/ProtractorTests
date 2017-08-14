@@ -14,7 +14,7 @@ exports.config = {
 
 	capabilities:{
 		// browserName: 'phantomjs', 'phantomjs.binary.path': require('phantomjs').path,
-		browserName: 'chrome',
+		browserName: 'firefox',
 		shardTestFiles: true,
 		maxInstances: 3},
 
