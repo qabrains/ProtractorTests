@@ -6,12 +6,11 @@ node_js:
  - 6.10.0
 
 addons:
-  firefox: "53.0"
-  # apt:
-  #   sources:
-  #     - google-chrome
-  #   packages:
-  #     - google-chrome-stable
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 
 before_script:
   - "export DISPLAY=:99.0"
