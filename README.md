@@ -16,24 +16,27 @@
 - Run '````npm run regression````' command to run all the tests
 - Run '````npm run smoketest````' command to run smoke tests
 
-**Tests:**
+**Features:**
 ----
 
-- [demo-without-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-without-page-object-pattern-spec.js)
+- Basic test (refer to [demo-without-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-without-page-object-pattern-spec.js) file)
 
-    - This file has got 3 tests
+- Refactoring tests and using Page Object Pattern (refer to [demo-data-driven-testing-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js) file)
 
-    - As the name suggests, it does not use any design pattern. If you are familiar with page object pattern then fell free to skip going through this file and refer to [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js) file
+- Running tests against Chrome, FF browsers (refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file)
 
-    - Tests in this file along with tests in [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js) file can be used as an example for 'how to refactor existing tests to use page object pattern'    
+- Parallel execution (refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file)
 
-- [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js)
+- Data driven testing (refer to [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-data-driven-testing-spec.js) file)
 
-    - This file has got same 3 tests as [demo-without-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-without-page-object-pattern-spec.js) file but uses page object pattern
+- Integration with Travis CI (refer to [.travis.yml](https://github.com/qabrains/ProtractorTests/blob/master/.travis.yml) and [travis.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/travis.conf.js) files
 
-- [demo-data-driven-testing-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-data-driven-testing-spec.js)
+- Publish Travis CI results in QA Brains Slack team --> protractor-tests-ci channel (click [here](https://join.slack.com/t/qabrains/shared_invite/MjI5NzUyNjQyMjkwLTE1MDMzNjY3MzctMzVjODgwN2VkOA) to join the slack team, if interested)
 
-    - This file has an example of writing data driven tests. It reads data from the [test data json file](https://github.com/qabrains/ProtractorTests/blob/master/test-data/add-functionality-test-data.json) and run the test for each set of test data
+**Example website:**
+----
+
+- http://juliemr.github.io/protractor-demo/
 
 **Troubleshooting:**
 ----
