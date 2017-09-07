@@ -19,19 +19,29 @@
 **Features:**
 ----
 
-- Basic test (refer to [demo-without-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-without-page-object-pattern-spec.js) file)
+- _Tests:_
+    - Basic test (refer to [demo-without-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-without-page-object-pattern-spec.js) file)
 
-- Refactoring tests and using Page Object Pattern (refer to [demo-data-driven-testing-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js) file)
+    - Refactoring tests and using Page Object Pattern (refer to [demo-data-driven-testing-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-with-page-object-pattern-spec.js) file)
 
-- Running tests against Chrome, FF browsers (refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file)
+    - Data driven testing (refer to [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-data-driven-testing-spec.js) file)
 
-- Parallel execution (refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file)
+- _Execution_:
+    - Running tests on
+        - Chrome
+        - Firefox
+        - Headless Chrome
+    browsers
+    - Parallel execution
+    - Integration with Travis CI (refer to [.travis.yml](https://github.com/qabrains/ProtractorTests/blob/master/.travis.yml) and [travis.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/travis.conf.js) files)
 
-- Data driven testing (refer to [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-data-driven-testing-spec.js) file)
+    Refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file for more info
 
-- Integration with Travis CI (refer to [.travis.yml](https://github.com/qabrains/ProtractorTests/blob/master/.travis.yml) and [travis.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/travis.conf.js) files
 
-- Publish Travis CI results in QA Brains Slack team --> protractor-tests-ci channel (click [here](https://join.slack.com/t/qabrains/shared_invite/MjI5NzUyNjQyMjkwLTE1MDMzNjY3MzctMzVjODgwN2VkOA) to join the slack team, if interested)
+- _Results_:
+    - Generate test execution report using [protractor-jasmine2-html-reporter](https://www.npmjs.com/package/protractor-jasmine2-html-reporter) npm package 
+    - Publish Travis CI results in 'QA Brains Slack team --> protractor-tests-ci' channel (click [here](https://join.slack.com/t/qabrains/shared_invite/MjI5NzUyNjQyMjkwLTE1MDMzNjY3MzctMzVjODgwN2VkOA) to join the slack team, if interested)
+
 
 **Example website:**
 ----
