@@ -1,20 +1,19 @@
 language: node_js
-sudo: false
-dist: trusty
 node_js:
-- 6.10.0
+- stable
 addons:
   apt:
     sources:
     - google-chrome
     packages:
     - google-chrome-stable
+services:
+    - xvfb
 before_script:
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- sleep 5 # give xvfb some time to start
+- sleep 3 # give xvfb some time to start
 - npm install -g protractor
 - npm install
+- npm run pretest
 notifications:
   slack:
     secure: KDHa/rcZbceUVPXnJoEH9hqA3shD9Zk9NJ1UKOzu95I0qgXzoTKqFmCtn9ka+O5tLsmLe0tu90humCk1KLhJvowWNctBqQolvmBzI/XWSd6u6GVP2dD3EIbsUzbbgZNIwwUp29yay7mcoGLip7LJmBAcvveql9gidv8gi2l34skIsq7RnG4NjFKj6lh3cVkPXbNXFh84o2+mSU0PJOE94pR8mo3/qC2zhRbIqvzPzwYrAliSlBSOVGLEnqwuw5SsD765vMmqSZg/27hw+49Lnh1/dF8LdWiiI+bNJz2ZXzn7/k82VezVKecEdGyxnz0OZlHL4T7spG2xx4dTe+XTS8GlMQx7PWMuGw13+00TVrXh+e5X8ZNUVlVJtWvUiCTxPuqic66FzzNi05yq9h7K7imHf5/xvMmUSL38u1z23F6La0dTD4IsNwloua6z09NQgyFm0wEYkvsVKzLH1wgpJrKTiA5zaApMpBKEV0maoQVnKhKPfJI9hCAFo73V1OiP3gjONx80oB9niYBUwH/tCjSe2fYeL/BgbhbP0OHPRfcwuezN/Rt3Qmq2mZQTY81ygEPfgjvkUM048MkDvFNo/K72B36umWlWpGd0LOzrLPEmHRPAsKgtdWwm2T/GJalU1JMuMOL5wO6dL+EWdLwYgMYtyKsCSbdG/pYRTkEh52k=
