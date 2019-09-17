@@ -8,7 +8,7 @@
 **Setup:**
 
 - Install protractor using `npm install -g protractor` command
-- Run `webdriver-manager update` command
+- Run `npm run pretest` command
 - Run `npm install` command
 
 **Running Tests:**
