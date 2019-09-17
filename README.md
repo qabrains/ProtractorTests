@@ -42,6 +42,8 @@
     - Generate test execution report using [protractor-jasmine2-html-reporter](https://www.npmjs.com/package/protractor-jasmine2-html-reporter) npm package 
     - Publish Travis CI results in 'QA Brains Slack team --> protractor-tests-ci' channel (click [here](https://join.slack.com/t/qabrains/shared_invite/MjI5NzUyNjQyMjkwLTE1MDMzNjY3MzctMzVjODgwN2VkOA) to join the slack team, if interested)
 
+- _CI:_
+    - Travis
 
 **Example website:**
 ----
