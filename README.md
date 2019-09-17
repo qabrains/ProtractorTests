@@ -7,14 +7,14 @@
 
 **Setup:**
 
-- Install protractor using '````npm install -g protractor````' command
-- Run '````webdriver-manager update````' command
-- Run '````npm install````' command
+- Install protractor using `npm install -g protractor` command
+- Run `webdriver-manager update` command
+- Run `npm install` command
 
 **Running Tests:**
 
-- Run '````npm run regression````' command to run all the tests
-- Run '````npm run smoketest````' command to run smoke tests
+- Run `npm run regression` command to run all the tests
+- Run `npm run smoketest` command to run smoke tests
 
 **Features:**
 ----
@@ -26,7 +26,7 @@
 
     - Data driven testing (refer to [demo-with-page-object-pattern-spec.js](https://github.com/qabrains/ProtractorTests/blob/master/tests/demo-data-driven-testing-spec.js) file)
 
-- _Execution_:
+- _Execution:_
     - Running tests on
         - Chrome
         - Firefox
@@ -38,7 +38,7 @@
     Refer to [local.conf.js](https://github.com/qabrains/ProtractorTests/blob/master/local.conf.js) file for more info
 
 
-- _Results_:
+- _Results:_
     - Generate test execution report using [protractor-jasmine2-html-reporter](https://www.npmjs.com/package/protractor-jasmine2-html-reporter) npm package 
     - Publish Travis CI results in 'QA Brains Slack team --> protractor-tests-ci' channel (click [here](https://join.slack.com/t/qabrains/shared_invite/MjI5NzUyNjQyMjkwLTE1MDMzNjY3MzctMzVjODgwN2VkOA) to join the slack team, if interested)
 
@@ -57,7 +57,7 @@
 
     - On Unix systems you can do the following to append it to your system’s search path, if you’re using a bash-compatible shell:
 
-        ````export PATH=$PATH:/path/to/geckodriver````
+        `export PATH=$PATH:/path/to/geckodriver`
 
     - On Windows you need to update the Path system variable to add the full directory path to the executable
 
